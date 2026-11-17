@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D67B47AA30ACD7FE00FAD600 /* iDiskFormatterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B47A930ACD7FE00FAD600 /* iDiskFormatterApp.swift */; };
+		D67B47AC30ACD7FE00FAD600 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B47AB30ACD7FE00FAD600 /* ContentView.swift */; };
+		D67B47AE30ACD80100FAD600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D67B47AD30ACD80100FAD600 /* Assets.xcassets */; };
+		D67B47B130ACD80100FAD600 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D67B47B030ACD80100FAD600 /* Preview Assets.xcassets */; };
+		D67B47BC30ACD80100FAD600 /* iDiskFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B47BB30ACD80100FAD600 /* iDiskFormatterTests.swift */; };
+		D67B47C630ACD80100FAD600 /* iDiskFormatterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B47C530ACD80100FAD600 /* iDiskFormatterUITests.swift */; };
+		D67B47C830ACD80100FAD600 /* iDiskFormatterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B47C730ACD80100FAD600 /* iDiskFormatterUITestsLaunchTests.swift */; };
+		D67B47D730ACD89400FAD600 /* DiskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B47D630ACD89400FAD600 /* DiskService.swift */; };
+		D67B47DA30ACD8BE00FAD600 /* DiskFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B47D930ACD8BE00FAD600 /* DiskFormat.swift */; };
+		D67B47DC30ACD8D800FAD600 /* ExternalDisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B47DB30ACD8D800FAD600 /* ExternalDisk.swift */; };
+		D67B47DE30ACD91100FAD600 /* DiskFormatterError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B47DD30ACD91100FAD600 /* DiskFormatterError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D67B47B830ACD80100FAD600 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D67B479E30ACD7FE00FAD600 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D67B47A530ACD7FE00FAD600;
+			remoteInfo = iDiskFormatter;
+		};
+		D67B47C230ACD80100FAD600 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D67B479E30ACD7FE00FAD600 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D67B47A530ACD7FE00FAD600;
+			remoteInfo = iDiskFormatter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D67B47A630ACD7FE00FAD600 /* iDiskFormatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDiskFormatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67B47A930ACD7FE00FAD600 /* iDiskFormatterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDiskFormatterApp.swift; sourceTree = "<group>"; };
+		D67B47AB30ACD7FE00FAD600 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D67B47AD30ACD80100FAD600 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D67B47B030ACD80100FAD600 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D67B47B230ACD80100FAD600 /* iDiskFormatter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iDiskFormatter.entitlements; sourceTree = "<group>"; };
+		D67B47B730ACD80100FAD600 /* iDiskFormatterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDiskFormatterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67B47BB30ACD80100FAD600 /* iDiskFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDiskFormatterTests.swift; sourceTree = "<group>"; };
+		D67B47C130ACD80100FAD600 /* iDiskFormatterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDiskFormatterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67B47C530ACD80100FAD600 /* iDiskFormatterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDiskFormatterUITests.swift; sourceTree = "<group>"; };
+		D67B47C730ACD80100FAD600 /* iDiskFormatterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDiskFormatterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D67B47D630ACD89400FAD600 /* DiskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskService.swift; sourceTree = "<group>"; };
+		D67B47D930ACD8BE00FAD600 /* DiskFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskFormat.swift; sourceTree = "<group>"; };
+		D67B47DB30ACD8D800FAD600 /* ExternalDisk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalDisk.swift; sourceTree = "<group>"; };
+		D67B47DD30ACD91100FAD600 /* DiskFormatterError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskFormatterError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D67B47A330ACD7FE00FAD600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67B47B430ACD80100FAD600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67B47BE30ACD80100FAD600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D67B479D30ACD7FE00FAD600 = {
+			isa = PBXGroup;
+			children = (
+				D67B47A830ACD7FE00FAD600 /* iDiskFormatter */,
+				D67B47BA30ACD80100FAD600 /* iDiskFormatterTests */,
+				D67B47C430ACD80100FAD600 /* iDiskFormatterUITests */,
+				D67B47A730ACD7FE00FAD600 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D67B47A730ACD7FE00FAD600 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D67B47A630ACD7FE00FAD600 /* iDiskFormatter.app */,
+				D67B47B730ACD80100FAD600 /* iDiskFormatterTests.xctest */,
+				D67B47C130ACD80100FAD600 /* iDiskFormatterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D67B47A830ACD7FE00FAD600 /* iDiskFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				D67B47D830ACD8B100FAD600 /* Models */,
+				D67B47D530ACD88300FAD600 /* ViewModel */,
+				D67B47D430ACD85200FAD600 /* View */,
+				D67B47A930ACD7FE00FAD600 /* iDiskFormatterApp.swift */,
+				D67B47AD30ACD80100FAD600 /* Assets.xcassets */,
+				D67B47B230ACD80100FAD600 /* iDiskFormatter.entitlements */,
+				D67B47AF30ACD80100FAD600 /* Preview Content */,
+			);
+			path = iDiskFormatter;
+			sourceTree = "<group>";
+		};
+		D67B47AF30ACD80100FAD600 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D67B47B030ACD80100FAD600 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D67B47BA30ACD80100FAD600 /* iDiskFormatterTests */ = {
+			isa = PBXGroup;
+			children = (
+				D67B47BB30ACD80100FAD600 /* iDiskFormatterTests.swift */,
+			);
+			path = iDiskFormatterTests;
+			sourceTree = "<group>";
+		};
+		D67B47C430ACD80100FAD600 /* iDiskFormatterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D67B47C530ACD80100FAD600 /* iDiskFormatterUITests.swift */,
+				D67B47C730ACD80100FAD600 /* iDiskFormatterUITestsLaunchTests.swift */,
+			);
+			path = iDiskFormatterUITests;
+			sourceTree = "<group>";
+		};
+		D67B47D430ACD85200FAD600 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D67B47AB30ACD7FE00FAD600 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D67B47D530ACD88300FAD600 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D67B47D630ACD89400FAD600 /* DiskService.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D67B47D830ACD8B100FAD600 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D67B47D930ACD8BE00FAD600 /* DiskFormat.swift */,
+				D67B47DB30ACD8D800FAD600 /* ExternalDisk.swift */,
+				D67B47DD30ACD91100FAD600 /* DiskFormatterError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D67B47A530ACD7FE00FAD600 /* iDiskFormatter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D67B47CB30ACD80100FAD600 /* Build configuration list for PBXNativeTarget "iDiskFormatter" */;
+			buildPhases = (
+				D67B47A230ACD7FE00FAD600 /* Sources */,
+				D67B47A330ACD7FE00FAD600 /* Frameworks */,
+				D67B47A430ACD7FE00FAD600 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iDiskFormatter;
+			productName = iDiskFormatter;
+			productReference = D67B47A630ACD7FE00FAD600 /* iDiskFormatter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D67B47B630ACD80100FAD600 /* iDiskFormatterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D67B47CE30ACD80100FAD600 /* Build configuration list for PBXNativeTarget "iDiskFormatterTests" */;
+			buildPhases = (
+				D67B47B330ACD80100FAD600 /* Sources */,
+				D67B47B430ACD80100FAD600 /* Frameworks */,
+				D67B47B530ACD80100FAD600 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D67B47B930ACD80100FAD600 /* PBXTargetDependency */,
+			);
+			name = iDiskFormatterTests;
+			productName = iDiskFormatterTests;
+			productReference = D67B47B730ACD80100FAD600 /* iDiskFormatterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D67B47C030ACD80100FAD600 /* iDiskFormatterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D67B47D130ACD80100FAD600 /* Build configuration list for PBXNativeTarget "iDiskFormatterUITests" */;
+			buildPhases = (
+				D67B47BD30ACD80100FAD600 /* Sources */,
+				D67B47BE30ACD80100FAD600 /* Frameworks */,
+				D67B47BF30ACD80100FAD600 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D67B47C330ACD80100FAD600 /* PBXTargetDependency */,
+			);
+			name = iDiskFormatterUITests;
+			productName = iDiskFormatterUITests;
+			productReference = D67B47C130ACD80100FAD600 /* iDiskFormatterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D67B479E30ACD7FE00FAD600 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					D67B47A530ACD7FE00FAD600 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					D67B47B630ACD80100FAD600 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = D67B47A530ACD7FE00FAD600;
+					};
+					D67B47C030ACD80100FAD600 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = D67B47A530ACD7FE00FAD600;
+					};
+				};
+			};
+			buildConfigurationList = D67B47A130ACD7FE00FAD600 /* Build configuration list for PBXProject "iDiskFormatter" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D67B479D30ACD7FE00FAD600;
+			productRefGroup = D67B47A730ACD7FE00FAD600 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D67B47A530ACD7FE00FAD600 /* iDiskFormatter */,
+				D67B47B630ACD80100FAD600 /* iDiskFormatterTests */,
+				D67B47C030ACD80100FAD600 /* iDiskFormatterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D67B47A430ACD7FE00FAD600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67B47B130ACD80100FAD600 /* Preview Assets.xcassets in Resources */,
+				D67B47AE30ACD80100FAD600 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67B47B530ACD80100FAD600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67B47BF30ACD80100FAD600 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D67B47A230ACD7FE00FAD600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67B47DE30ACD91100FAD600 /* DiskFormatterError.swift in Sources */,
+				D67B47AC30ACD7FE00FAD600 /* ContentView.swift in Sources */,
+				D67B47AA30ACD7FE00FAD600 /* iDiskFormatterApp.swift in Sources */,
+				D67B47DC30ACD8D800FAD600 /* ExternalDisk.swift in Sources */,
+				D67B47D730ACD89400FAD600 /* DiskService.swift in Sources */,
+				D67B47DA30ACD8BE00FAD600 /* DiskFormat.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67B47B330ACD80100FAD600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67B47BC30ACD80100FAD600 /* iDiskFormatterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67B47BD30ACD80100FAD600 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67B47C830ACD80100FAD600 /* iDiskFormatterUITestsLaunchTests.swift in Sources */,
+				D67B47C630ACD80100FAD600 /* iDiskFormatterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D67B47B930ACD80100FAD600 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D67B47A530ACD7FE00FAD600 /* iDiskFormatter */;
+			targetProxy = D67B47B830ACD80100FAD600 /* PBXContainerItemProxy */;
+		};
+		D67B47C330ACD80100FAD600 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D67B47A530ACD7FE00FAD600 /* iDiskFormatter */;
+			targetProxy = D67B47C230ACD80100FAD600 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D67B47C930ACD80100FAD600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D67B47CA30ACD80100FAD600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		D67B47CC30ACD80100FAD600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iDiskFormatter/iDiskFormatter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iDiskFormatter/Preview Content\"";
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.macos.iDiskFormatter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D67B47CD30ACD80100FAD600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iDiskFormatter/iDiskFormatter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iDiskFormatter/Preview Content\"";
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.macos.iDiskFormatter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D67B47CF30ACD80100FAD600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.macos.iDiskFormatterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iDiskFormatter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iDiskFormatter";
+			};
+			name = Debug;
+		};
+		D67B47D030ACD80100FAD600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.macos.iDiskFormatterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iDiskFormatter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iDiskFormatter";
+			};
+			name = Release;
+		};
+		D67B47D230ACD80100FAD600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.macos.iDiskFormatterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = iDiskFormatter;
+			};
+			name = Debug;
+		};
+		D67B47D330ACD80100FAD600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.macos.iDiskFormatterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = iDiskFormatter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D67B47A130ACD7FE00FAD600 /* Build configuration list for PBXProject "iDiskFormatter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67B47C930ACD80100FAD600 /* Debug */,
+				D67B47CA30ACD80100FAD600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D67B47CB30ACD80100FAD600 /* Build configuration list for PBXNativeTarget "iDiskFormatter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67B47CC30ACD80100FAD600 /* Debug */,
+				D67B47CD30ACD80100FAD600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D67B47CE30ACD80100FAD600 /* Build configuration list for PBXNativeTarget "iDiskFormatterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67B47CF30ACD80100FAD600 /* Debug */,
+				D67B47D030ACD80100FAD600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D67B47D130ACD80100FAD600 /* Build configuration list for PBXNativeTarget "iDiskFormatterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67B47D230ACD80100FAD600 /* Debug */,
+				D67B47D330ACD80100FAD600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D67B479E30ACD7FE00FAD600 /* Project object */;
+}
